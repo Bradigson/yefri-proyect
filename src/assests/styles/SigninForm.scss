@@ -1,0 +1,18 @@
+@mixin FormContainer($Width, $Height, $Padding){
+    width:$Width;
+    height:$Height;
+    padding:$Padding;
+}
+.form-contianer{
+    background:Red;
+    @include FormContainer(95%,70vh, 15px );
+
+    form{
+        background:#eee;
+        padding:10px;
+        height:90%;
+        border-radius:20px;
+        padding-top:50px;
+        
+    }
+}
