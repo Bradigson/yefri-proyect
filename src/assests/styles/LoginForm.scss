@@ -1,0 +1,76 @@
+@use 'Variables.scss';
+body{
+    
+    overflow:hidden;
+}
+@mixin formContainer($Width, $Height, $Padding){
+    width:$Width;
+    height: $Height;
+    padding:$Padding
+}
+.login-container{
+    // background:red;
+   @include formContainer(90%, 85vh, 5px );
+   display:flex;
+   justify-content:center;
+   flex-wrap:wrap;
+   .img{
+       width:Variables.$Width;
+       height:Variables.$Height;
+       img{
+           width:100%;
+           height:100%;
+           object-fit:cover;
+       }
+   }
+   .form-container{
+       width:Variables.$Width;
+       height:Variables.$Height;
+       h1{
+           color:#052571;
+           font-weight: 650;
+       }
+       form div > input{
+           border-radius:Variables.$BorderRadius;
+           line-height: Variables.$LineHeight;
+           padding-left:Variables.$PaddingLeft;
+           background:#eee;
+           border:none;
+           
+       }
+       #basic-addon1{
+           
+        background: #eee;
+        border-radius:20em 0 0 20em;
+        padding:0 20px 0 30px;
+        border:none;
+        
+        .bxs-envelope, .bxs-lock-alt{
+            font-size: 20px;
+            opacity:.3;
+        }
+       }
+       form div > input::placeholder{
+           font-weight: 500;
+           font-size: 17px;
+       }
+       form div > input:focus{
+        border:none;
+        box-shadow: none;
+        color:#000
+        
+        }
+        
+        
+       .btn-success{
+            background:#052571;
+            border-radius:Variables.$BorderRadius;
+            line-height: Variables.$LineHeight;
+            width:100%;
+            font-size:20px;
+            font-weight: 600;
+            
+       }
+   }
+
+}
