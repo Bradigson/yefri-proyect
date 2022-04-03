@@ -59,7 +59,7 @@ const LogInForm = (props)=>{
             
             <div className='form-container'>
                 <form onSubmit={handleSubmit}>
-                    <div className="text-center">
+                    <div className="text-center title-container">
                         <h1>Log In</h1>
                     </div>
                     

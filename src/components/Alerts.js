@@ -4,7 +4,10 @@ const handleAlertUser = ()=>{
         text : 'This user already exist',
         icon : 'error',
         iconColor:'#d33',
-        confirmButtonColor:'#3085d6'
+        confirmButtonColor:'#3085d6',
+        color:'#262626',
+        background:'#fff',
+        confirmButtonColor:'#052571'
     })
 }
 
@@ -14,7 +17,11 @@ const handleAlertPassword = ()=>{
         title : 'Weak Password',
         text:'This password is too easy to guess. Change your password to something strong. And your password must contain at leat 6 caracter and be strong',
         icon : 'warning',
-        confirmButtonColor:'#3085d6'
+        confirmButtonColor:'#3085d6',
+        iconColor:'#052571',
+        color:'#262626',
+        background:'#fff',
+        confirmButtonColor:'#052571'
     })
 }
 
@@ -53,6 +60,10 @@ const handleEmptyEmail = ()=>{
         title : 'Warning',
         text : 'You have to enter a email',
         icon : 'warning',
+        iconColor:'#052571',
+        color:'#262626',
+        background:'#fff',
+        confirmButtonColor:'#052571'
     })
 }
 
@@ -62,7 +73,10 @@ const handleEmptyPassword = ()=>{
         title : 'Warning',
         text : 'You have to enter a password',
         icon : 'warning',
-        
+        iconColor:'#052571',
+        color:'#262626',
+        background:'#fff',
+        confirmButtonColor:'#052571'
     })
 }
 export{

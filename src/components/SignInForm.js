@@ -1,4 +1,5 @@
 import '../assests/styles/SigninForm.scss';
+import ImgSignup from '../assests/imgs/imgSignup.svg'
 import { useState } from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import { handleAlertUser, handleAlertPassword, handleUserSuccess, 
@@ -62,49 +63,50 @@ const Signin = ()=>{
     }
     return(
         <div className='form-contianer'>
-           
-            <form className='form-group' onSubmit={handleSubmit}>
-                <div className='mt-4 pb-3'>
-                    <h2 className='text-center '>Sign In</h2>
-                </div>
-                <div>
-                    <input
-                    type='email'
-                    placeholder='Email'
-                    className='form-control'
-                    name='email'
-                    // id='email'
-                    value={email}
-                    onChange={handleEmail}
-                    />
-                </div>
-                <div className='mt-4'>
-                    <input
-                    type='password'
-                    placeholder='Password'
-                    className="form-control"
-                    id='password'
-                    name='password'
-                    value={password}
-                    onChange={handlePassword}
-
-                    />
-                </div>
-                <div className='mt-4'>
-                    <button className='btn btn-primary'>Sign in</button>
-                </div>
-            </form>
-            {/* <div>
-                <button onClick={()=>handleAlertUser()}>
-                    user
-                </button>
-                <button onClick={()=> handleAlertPassword()}>password</button>
-            </div> */}
-            <div>
-                <span>Have accout?</span>{' '}
-                <Link to='/'>Log in</Link>  
+            <div className=' img-container'>
+                <img src={ImgSignup} alt='img-signup'/>
             </div>
 
+           <div className='form-container-signup'>
+               
+                <form className='form-group' onSubmit={handleSubmit}>
+                    <div className='mt-4 pb-3'>
+                        <h2 className='text-center '>Sign Up</h2>
+                    </div>
+                    <div>
+                        <input
+                        type='text'
+                        placeholder='Email'
+                        className='form-control'
+                        name='email'
+                        // id='email'
+                        value={email}
+                        onChange={handleEmail}
+                        />
+                    </div>
+                    <div className='mt-4'>
+                        <input
+                        type='password'
+                        placeholder='Password'
+                        className="form-control"
+                        id='password'
+                        name='password'
+                        value={password}
+                        onChange={handlePassword}
+
+                        />
+                    </div>
+                    <div className='mt-4 '>
+                        <button className='btn btn-primary'>Sign up</button>
+                    </div>
+                </form>
+            
+                <div className='text-center text-muted'>
+                    <span>Have accout?</span>{' '}
+                    <Link to='/'>Log in</Link>  
+                </div>
+
+           </div>
         </div>
     )
 }

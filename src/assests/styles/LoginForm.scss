@@ -1,8 +1,5 @@
 @use 'Variables.scss';
-body{
-    
-    overflow:hidden;
-}
+
 @mixin formContainer($Width, $Height, $Padding){
     width:$Width;
     height: $Height;

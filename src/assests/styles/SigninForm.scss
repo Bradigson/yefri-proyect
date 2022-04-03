@@ -1,18 +1,54 @@
+@use 'Variables';
 @mixin FormContainer($Width, $Height, $Padding){
     width:$Width;
     height:$Height;
     padding:$Padding;
 }
-.form-contianer{
-    background:Red;
-    @include FormContainer(95%,70vh, 15px );
+    .img-container{
+        width:Variables.$Width;
+        height:Variables.$Height;
+    }
+    .img-container > img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .form-contianer{
+    @include FormContainer(95%,90vh, 15px );
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 
+    .title-container > h2{
+        
+        color:#052571;
+        font-weight: 650;
+    }
+    .form-container-signup{
+        width:95%;
+        height:55%;
+    }
     form{
-        background:#eee;
         padding:10px;
-        height:90%;
-        border-radius:20px;
-        padding-top:50px;
+        padding-top:5px;
+        
+        
+        input{
+            border-radius:Variables.$BorderRadius;
+            line-height: Variables.$LineHeight;
+            padding-left:15%;
+            background:#eee;
+            border:none;
+        }
+        .btn-primary{
+            background:#052571;
+            border-radius:Variables.$BorderRadius;
+            line-height: Variables.$LineHeight;
+            width:100%;
+            font-size:20px;
+            font-weight: 600;
+        }
         
     }
+    
 }
