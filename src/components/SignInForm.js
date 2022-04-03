@@ -1,5 +1,6 @@
 import '../assests/styles/SigninForm.scss';
 import { useState } from 'react';
+import {Link, useHistory} from 'react-router-dom';
 import { handleAlertUser, handleAlertPassword, handleUserSuccess, 
         handleEmailValidation, handleIncorrectPassword, handleEmptyEmail, 
         handleEmptyPassword } from './Alerts';
@@ -11,7 +12,8 @@ const Signin = ()=>{
         
 
     const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [password, setPassword] = useState('');
+    const history = useHistory();
 
     const handleEmail = e=>{
         setEmail(e.target.value);
@@ -39,6 +41,7 @@ const Signin = ()=>{
                 setEmail('');
                 setPassword('');
                 handleUserSuccess();
+                history.push('/')
             }
             catch(err){
                 if(err.code == 'auth/invalid-email'){
@@ -97,6 +100,10 @@ const Signin = ()=>{
                 </button>
                 <button onClick={()=> handleAlertPassword()}>password</button>
             </div> */}
+            <div>
+                <span>Have accout?</span>{' '}
+                <Link to='/'>Log in</Link>  
+            </div>
 
         </div>
     )

@@ -41,6 +41,8 @@ const handleUserSuccess = ()=>{
     Alert.fire({
         text : 'Congratulation, yur account has been successfully created',
         icon : 'success',
+        showConfirmButton:false,
+        timer:'800'
 
     })
 }
