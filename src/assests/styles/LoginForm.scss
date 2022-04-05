@@ -164,3 +164,16 @@
 
 
 
+    @media screen and (min-width:375px) and (max-width:375px){
+    
+        body{
+            overflow: hidden;
+        }
+        .login-container{
+            margin-top:-75px;
+            .img{
+                height:30%;
+            }
+        }
+    }
+
