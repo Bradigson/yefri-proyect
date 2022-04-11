@@ -36,8 +36,12 @@ const handleLink = ()=>{
 const data = Dotos;
 
     return(
-        <div className='Page'>
+        <div className='Page '>
+            <div className="signout">
+                <button onClick={handleSignOut} >Sign out</button>
+            </div>
             <header className="header">
+                
                 <nav className={`${menu ? 'change' : ''} ${'navbar'}`}>
                     <div className="hamburger-menu" onClick={handleMenu}>
                         <div className='line line-1'></div>
@@ -52,21 +56,16 @@ const data = Dotos;
                         <li><Link to='/usuarios' className='nav-link' onClick={handleLink}>Usuarios</Link></li>
                     </ul>
 
+                    <div className="user">
+                        <span>{props.user}</span>
+                    </div>
                 </nav>
                 
+                
+               
             </header>
-            {/* <h1>Bienvenido</h1>
-            <p>{props.user}</p>
-            <div>
-                <p>Web page in progress....</p>
-            </div>
+            
 
-            <div>
-                <button onClick={handleSignOut} className='btn btn-dark'>Sign Out</button>
-            </div> */}
-
-
-           {/* <Banner1/> */}
 
 
            <Switch>
@@ -87,6 +86,7 @@ const data = Dotos;
                    <Banner1/>
                </Route>
            </Switch>
+          
         </div>
     )
 }

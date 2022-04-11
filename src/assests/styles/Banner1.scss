@@ -2,14 +2,16 @@
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    place-items: center;
     // background: yellow;
-    width:85%;
+    width:80%;
     
     .Banner1__section1{
         // background:green;
         display:flex;
-        height:100%;
-        width:60%;
+        height:55%;
+        width:50%;
         justify-content: center;
         .Banner1-section1__img{
             width:100%;
@@ -21,7 +23,7 @@
         }
         .Banner1-section1__img > img{
             width:80%;
-            height:80%;
+            height:95%;
             border-radius:20px;
             object-fit: cover;
         }
@@ -33,6 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height:40%;
     }
 
     .bxs-check-shield{

@@ -51,6 +51,7 @@ function App() {
                             align-items:center;
 
                       }
+                      
                     `}
               </style> */}
 
@@ -58,7 +59,7 @@ function App() {
                 {
                   `
                   .app{
-                    background:#fff;
+                    background:#eee;
                     height:100vh;
                     display:flex;
                     justify-content:center;
