@@ -10,7 +10,7 @@ const Banner1 = ()=>{
                 
 
             </section>
-            <section className='Banner1-section2 mt-5'>
+            <section className='Banner1-section2'>
                 <div className='Banner1-section2__content text-center text-muted'>
                     <i className='bx bxs-check-shield'></i>
                     <h3>Tu Seguridad Es Nuestro Trabajo</h3>

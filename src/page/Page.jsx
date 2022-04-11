@@ -1,7 +1,6 @@
 import { useHistory, Link, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 import '../assests/styles/HomePage.scss';
-import '../assests/styles/Header.scss';
 import Banner1 from "../components/Banner1";
 import SobreNosotros from "../components/SobreNosotros";
 import Reportes from "../components/Reportes";
@@ -38,7 +37,7 @@ const data = Dotos;
 
     return(
         <div className='Page'>
-            <header>
+            <header className="header">
                 <nav className={`${menu ? 'change' : ''} ${'navbar'}`}>
                     <div className="hamburger-menu" onClick={handleMenu}>
                         <div className='line line-1'></div>

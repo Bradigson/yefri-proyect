@@ -1,21 +1,39 @@
 .Banner1{
-    padding-top:125px;
 
+    display: flex;
+    justify-content: center;
+    // background: yellow;
+    width:85%;
     
     .Banner1__section1{
+        // background:green;
         display:flex;
+        height:100%;
+        width:60%;
         justify-content: center;
         .Banner1-section1__img{
-            width:95%;
-            height:50%;
-        }
-        .Banner1-section1__img > img{
             width:100%;
             height:100%;
+            // background: mediumaquamarine;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Banner1-section1__img > img{
+            width:80%;
+            height:80%;
             border-radius:20px;
+            object-fit: cover;
         }
     }
-
+    
+    .Banner1-section2{
+        // background: blueviolet;
+        width:40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .bxs-check-shield{
         color:#51d151;

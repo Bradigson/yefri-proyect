@@ -4,8 +4,8 @@ const Usuarios = ()=>{
     const getUsuarios = UsuariosDatos;
     return(
         <div className='usuarios'>
-            <table className="table">
-                <thead className="table-dark">
+            <table className="table table-striped table-hover">
+                <thead className="table-header">
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>

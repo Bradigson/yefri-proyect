@@ -1,3 +1,17 @@
 .SobreNosotro{
-    padding:120px 10px 30px 10px;
+    padding:70px 10px 30px 10px;
+    // background:red;
+    width: 85%;
+    .contenedore_nosotros{
+        // background:brown;
+        display: flex;
+        align-items: center;
+        .sobrenosotros-content{
+            // background: green;
+            width:95%;
+        }
+        .card{
+            width:300px;
+        }
+    }
 }
