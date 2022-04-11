@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "nombre":"jose",
+        "apellido":"hernandez",
+        "ocupacion":"desarrollador"
+    },
+    {
+        "id":2,
+        "nombre":"fernando",
+        "apellido":"hernandez",
+        "ocupacion":"desarrollador"
+    },
+    {
+        "id":3,
+        "nombre":"maria",
+        "apellido":"hernandez",
+        "ocupacion":"desarrollador"
+    }
+]

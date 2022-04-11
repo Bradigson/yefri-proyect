@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "Nombre" : "Hospital Padre Billini",
+        "Ubx" : "18.471191",
+        "Uby" : "-69.889152",
+        "Descripcion" : "24 horas"
+    },
+    {
+        "id":2,
+        "Nombre" : "Hospital Padre Billini",
+        "Ubx" : "18.471191",
+        "Uby" : "-69.889152",
+        "Descripcion" : "24 horas"
+    },
+    {
+        "id":3,
+        "Nombre" : "Hospital Padre Billini",
+        "Ubx" : "18.471191",
+        "Uby" : "-69.889152",
+        "Descripcion" : "24 horas"
+    },
+    {
+        "id":4,
+        "Nombre" : "Hospital Padre Billini",
+        "Ubx" : "18.471191",
+        "Uby" : "-69.889152",
+        "Descripcion" : "24 horas"
+    }
+]

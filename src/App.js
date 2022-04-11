@@ -21,25 +21,26 @@ function App() {
 
   return (
 
-    <div className='App'>
+    <div className='app'>
 
-      {/* {
-        userIn ? <Page/> : <LogInForm/>
-      } */}
+      
+      <Page/>
 
-          <Switch>
-              <Route path='/signin'>
-                <Signin/>
-              </Route>
+          {/* <div className="App">
+            <Switch>
+                <Route path='/signin'>
+                  <Signin/>
+                </Route>
 
-              <Route path='/page'>
-                <Page user={`${userIn ? userIn.email : userIn}`}/>
-              </Route>
-              <Route path='/'>
-                <LogInForm/>
-              </Route>
-          
-          </Switch>
+                <Route path='/page'>
+                  <Page user={`${userIn ? userIn.email : userIn}`}/>
+                </Route>
+                <Route path='/'>
+                  <LogInForm/>
+                </Route>
+            
+            </Switch>
+          </div>
 
             <style>
                     {`
@@ -51,7 +52,7 @@ function App() {
 
                       }
                     `}
-              </style>
+              </style> */}
 
     </div>
 

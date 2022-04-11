@@ -1,0 +1,76 @@
+header{
+    // background:;
+    position: fixed;
+    z-index: 999;
+    width:100%;
+    height:75px;
+    .navbar{
+        background:#2b2ba5;
+        position:fixed;
+        width:100%;
+        height:100vh;
+        left:-500px;
+        transition:all 1s;
+        display: flex;
+        justify-content: center;
+        z-index: 999;
+    
+        .hamburger-menu{
+            width:35px;
+            height:30px;
+            position:fixed;
+            z-index: 9999;
+            top:30px;
+            right:50px;
+            cursor: pointer;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transition:all 1s;    
+        }
+    
+    
+        .menu__list{
+            height: 60%;
+            width:90%;
+            display:grid;
+            place-items: center;
+            padding:10px;
+            
+             li{
+                list-style:none;
+                
+            }
+        }
+        .nav-link{
+            font-size:20px;
+            color:#eee;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+       
+    }
+    .change{
+        left:0px;
+    }
+    .line{
+        width:100%;
+        height:3px;
+        background:#052571;
+        transition:all 1s;
+        
+    }
+    .change .line-1{
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+        background:#eee;
+    }
+    .change .line-2{
+        opacity:0;
+    
+    }
+    .change .line-3{
+        transform: rotateZ(405deg) translate(-8px, -6px);
+        background:#eee;
+    }
+}
