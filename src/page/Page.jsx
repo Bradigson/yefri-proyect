@@ -6,6 +6,7 @@ import SobreNosotros from "../components/SobreNosotros";
 import Reportes from "../components/Reportes";
 import Hospitales from "../components/Hospitales";
 import Usuarios from "../components/Usuarios";
+import Signin from "../components/SignInForm";
 import app from "../firebase/Firebase";
 import Dotos from '../datos/datos.json';
 import {getAuth, signOut} from 'firebase/auth';
@@ -34,6 +35,9 @@ const handleMenu = ()=>{
 const handleLink = ()=>{
     setMenu(!menu);
 }
+const handleAddUser = ()=>{
+    navigate('/signin');
+}
 const data = Dotos;
 
     return(
@@ -55,6 +59,9 @@ const data = Dotos;
                         <li><Link to='reportes' className='nav-link' onClick={handleLink}>Reportes</Link></li>
                         <li><Link to='hospitales' className='nav-link' onClick={handleLink}>Hospitales</Link></li>
                         <li><Link to='usuarios' className='nav-link' onClick={handleLink}>Usuarios</Link></li>
+                        <li>
+                            <button onClick={handleAddUser} className='nav-link btn-add'>Agregar usuarios</button>
+                        </li>
                     </ul>
 
                     <div className="user">

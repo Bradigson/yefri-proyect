@@ -1,7 +1,7 @@
 import '../assests/styles/SigninForm.scss';
 import ImgSignup from '../assests/imgs/imgSignup.svg'
 import { useState } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { handleAlertUser, handleAlertPassword, handleUserSuccess, 
         handleEmailValidation, handleIncorrectPassword, handleEmptyEmail, 
         handleEmptyPassword } from './Alerts';
@@ -14,7 +14,7 @@ const Signin = ()=>{
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
-  
+    const navigate = useNavigate();
 
     const handleEmail = e=>{
         setEmail(e.target.value);
@@ -61,6 +61,9 @@ const Signin = ()=>{
         }
         
     }
+    const handleUserDone = ()=>{
+        navigate(-1);
+    }
     return(
         <div className='form-contianer'>
             <div className=' img-container'>
@@ -71,7 +74,7 @@ const Signin = ()=>{
                
                 <form className='form-group' onSubmit={handleSubmit}>
                     <div className='mt-4 pb-3'>
-                        <h2 className='text-center '>Sign Up</h2>
+                        <h2 className='text-center '>Agregar Usuarios</h2>
                     </div>
                     <div>
                         <input
@@ -101,10 +104,9 @@ const Signin = ()=>{
                     </div>
                 </form>
             
-                {/* <div className='text-center text-muted'>
-                    <span>Have accout?</span>{' '}
-                    <Link to='/'>Log in</Link>  
-                </div> */}
+                <div className='text-center text-muted'>
+                    <button onClick={handleUserDone} className='btn btn-outline-success'>DONE!</button>  
+                </div>
 
            </div>
         </div>

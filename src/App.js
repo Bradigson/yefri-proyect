@@ -5,6 +5,7 @@ import LogInForm from "./components/LogInForm";
 import Page from "./page/Page";
 import app from "./firebase/Firebase";
 import {getAuth, onAuthStateChanged} from 'firebase/auth';
+import Signin from './components/SignInForm';
 const auth = getAuth(app);
 
 
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to='/login'/>}/>
         <Route path='/login/' element={<LogInForm/>}/>
+        <Route path='signin' element={<Signin/>}/>
         <Route path='/page/*' element={<Page user={userIn ? userIn.email : userIn}/>}/>
       </Routes>
 {/* 

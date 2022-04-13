@@ -60,6 +60,16 @@
             .menu__list > li{
                 margin-top: 30px;
                 list-style: none;
+                .btn-add{
+                    background:none;
+                    color:#eee;
+                    border:none;
+                    outline:none;
+                    &:active{
+                        color:green;
+                    }
+
+                }
             }
             
         }
