@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route, useNavigate } from "react-router-dom";
 import '../assests/styles/HomePage.scss';
 import Banner1 from "../components/Banner1";
 import SobreNosotros from "../components/SobreNosotros";
@@ -14,12 +14,13 @@ const auth = getAuth(app);
 
 const Page = (props)=>{
     const [menu, setMenu] = useState(false);
- 
+    const navigate = useNavigate();
     const handleSignOut = ()=>{
 
     try{
         signOut(auth);
-        // history.push('/')
+        navigate('/login')
+        
     }catch(err){
         console.log(err)
     }
@@ -66,7 +67,6 @@ const data = Dotos;
                
             </header>
             
-            {/* <Banner1/> */}
             <Routes>
                 <Route path='inicio' element={<Banner1/>}/>
                 <Route path='nosotros' element={<SobreNosotros/>}/>

@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to='/login'/>}/>
         <Route path='/login/' element={<LogInForm/>}/>
-        <Route path='/page/*' element={<Page/>}/>
+        <Route path='/page/*' element={<Page user={userIn ? userIn.email : userIn}/>}/>
       </Routes>
 {/* 
          
