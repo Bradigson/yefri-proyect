@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Img from '../assests/imgs/imgForm.svg';
+import Img from '../assests/imgs/logo1.jpeg';
 import '../assests/styles/LoginForm.scss';
 import {Link, useNavigate} from 'react-router-dom';
 import { handleUserNotFound, handleEmaiInput,

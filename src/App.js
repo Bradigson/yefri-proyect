@@ -51,7 +51,7 @@ function App() {
                 {
                   `
                   .app{
-                    background:#eee;
+                    background:#fff;
                     height:100vh;
                     display:flex;
                     justify-content:center;
