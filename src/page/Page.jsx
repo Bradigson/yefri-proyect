@@ -1,5 +1,5 @@
-import { useHistory, Link, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import { Link, Routes, Route } from "react-router-dom";
 import '../assests/styles/HomePage.scss';
 import Banner1 from "../components/Banner1";
 import SobreNosotros from "../components/SobreNosotros";
@@ -14,12 +14,12 @@ const auth = getAuth(app);
 
 const Page = (props)=>{
     const [menu, setMenu] = useState(false);
-    const history = useHistory();
+ 
     const handleSignOut = ()=>{
 
     try{
         signOut(auth);
-        history.push('/')
+        // history.push('/')
     }catch(err){
         console.log(err)
     }
@@ -49,11 +49,11 @@ const data = Dotos;
                         <div className='line line-3'></div>
                     </div>
                     <ul className='menu__list'>
-                        <li><Link to='/' className='nav-link' onClick={handleLink}>Inicio</Link></li>
-                        <li><Link to='/sobrenosotros' className='nav-link' onClick={handleLink}>Sobre Nosotros</Link></li>
-                        <li><Link to='/reportes' className='nav-link' onClick={handleLink}>Reportes</Link></li>
-                        <li><Link to='/hospitales' className='nav-link' onClick={handleLink}>Hospitales</Link></li>
-                        <li><Link to='/usuarios' className='nav-link' onClick={handleLink}>Usuarios</Link></li>
+                        <li><Link to='inicio' className='nav-link' onClick={handleLink}>Inicio</Link></li>
+                        <li><Link to='nosotros' className='nav-link' onClick={handleLink}>Sobre Nosotros</Link></li>
+                        <li><Link to='reportes' className='nav-link' onClick={handleLink}>Reportes</Link></li>
+                        <li><Link to='hospitales' className='nav-link' onClick={handleLink}>Hospitales</Link></li>
+                        <li><Link to='usuarios' className='nav-link' onClick={handleLink}>Usuarios</Link></li>
                     </ul>
 
                     <div className="user">
@@ -62,30 +62,19 @@ const data = Dotos;
                 </nav>
                 
                 
+                
                
             </header>
             
-
-
-
-           <Switch>
-               <Route path='/sobrenosotros'>
-                   <SobreNosotros/>
-
-               </Route>
-               <Route path='/reportes'>
-                   <Reportes/>
-               </Route>
-               <Route path='/hospitales'>
-                   <Hospitales/>
-               </Route>
-               <Route path='/usuarios'>
-                    <Usuarios/>
-               </Route>
-               <Route path='/'>
-                   <Banner1/>
-               </Route>
-           </Switch>
+            {/* <Banner1/> */}
+            <Routes>
+                <Route path='inicio' element={<Banner1/>}/>
+                <Route path='nosotros' element={<SobreNosotros/>}/>
+                <Route path='reportes' element={<Reportes/>}/>
+                <Route path='hospitales' element={<Hospitales/>}/>
+                <Route path='usuarios' element={<Usuarios/>}/>
+            </Routes>
+          
           
         </div>
     )

@@ -1,5 +1,4 @@
-import Signin from "./components/SignInForm";
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import './assests/styles/App.scss';
 import LogInForm from "./components/LogInForm";
@@ -24,24 +23,17 @@ function App() {
     <div className='app'>
 
       
-      <Page/>
+      {/* <Page/> */}
 
-          {/* <div className="App">
-            <Switch>
-                <Route path='/signin'>
-                  <Signin/>
-                </Route>
 
-                <Route path='/page'>
-                  <Page user={`${userIn ? userIn.email : userIn}`}/>
-                </Route>
-                <Route path='/'>
-                  <LogInForm/>
-                </Route>
-            
-            </Switch>
-          </div>
 
+      <Routes>
+        <Route path='/' element={<Navigate to='/login'/>}/>
+        <Route path='/login/' element={<LogInForm/>}/>
+        <Route path='/page/*' element={<Page/>}/>
+      </Routes>
+{/* 
+         
             <style>
                     {`
                       .App{

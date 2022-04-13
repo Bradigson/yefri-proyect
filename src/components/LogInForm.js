@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Img from '../assests/imgs/imgForm.svg';
 import '../assests/styles/LoginForm.scss';
-import {Link, useHistory} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { handleUserNotFound, handleEmaiInput,
         handlePasswordInput, handleIcorrctPassword, handleSuccessAccount } from "./AlertLogIn";
 import app from "../firebase/Firebase";
@@ -12,7 +12,7 @@ const LogInForm = (props)=>{
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleEamil = e=>{
         setEmail(e.target.value);
@@ -38,7 +38,8 @@ const LogInForm = (props)=>{
                 setEmail('');
                 setPassword('');
                 handleSuccessAccount();
-                history.push('/page')
+                // history.push('/page')
+                navigate('/page/inicio');
             }
             catch(err){
                 if(err.code == 'auth/user-not-found'){
@@ -92,10 +93,10 @@ const LogInForm = (props)=>{
                         <button className="btn btn-success">Log In</button>
                     </div>
                 </form>
-                <div className="mt-2 text-center text-muted">
+                {/* <div className="mt-2 text-center text-muted">
                     <span>Don't you have account?</span>{' '}
                     <Link to='/signin'>Sign up</Link>
-                </div>
+                </div> */}
             </div>
         </div>
     )
