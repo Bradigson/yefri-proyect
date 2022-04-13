@@ -1,18 +1,31 @@
+::-webkit-scrollbar{
+    // background:#fff;
+    width:8px;
+    border-radius:20em;
+}
+::-webkit-scrollbar-thumb{
+    background:#052571;
+    border-radius: 20em;;
+}
 .Page{
     
     
-    background: #fff;
+    // background: red;
     box-shadow: 1px 1px  8px 6px rgba(0,0,0,.2);
     width:90%;
     height:90vh;
     display:flex;
-    border-radius: 20px;
+    border-radius: 10px;
+    overflow: auto;
+    
 
     .header{
         background:#052571;
-        border-radius:20px 0px 0px 20px;
+        border-radius:10px 0px 0px 10px;
         padding:2px;
         width:17%;
+        position:fixed;
+        height:90vh;
         .navbar{
             // background:yellow;
             height:100%;
@@ -69,6 +82,7 @@
          height:35px;
          margin-left:-70px;
          margin-top:-35px;
+         position: fixed;
          button{
              border:none;
              background: none;

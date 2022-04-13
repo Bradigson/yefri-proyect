@@ -3,76 +3,101 @@
         "id":1,
         "Nombre":"Veria Caty",
         "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+      
+        "Rango" : "Capitan",
+        "Numero Empleado" : "27563",
+        "Cedula" : "001-5236541-8",
+        "Flota" : "849-652-3652"
+        
     },
     {
         "id":2,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Carlos Manuel",
+        "Apellido" : "Hernandez Ramirez",
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27589",
+        "Cedula" : "001-8569875-5",
+        "Flota" : "8849-652-2653"
     },
     {
         "id":3,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
+        "Nombre":"Bradigson",
+        "Apellido" : "Nuñez Perez",
         "Puesto" : "",
-        "Rango" : "Capitan"
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27485",
+        "Cedula" : "001-4569872-8",
+        "Flota" : "849-652-3233"
     },
     {
         "id":4,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Adrian Abraham",
+        "Apellido" : "Ledesma Carrion",
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27001",
+        "Cedula" : "001-6325648-8",
+        "Flota" : "849-652-8956"
     },
     {
         "id":5,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Jesus Manuel",
+        "Apellido" : "Soto Ortiz",
+        
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27002",
+        "Cedula" : "402-5231256-8",
+        "Flota" : "849-652-9988"
     },
     {
         "id":6,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Andres",
+        "Apellido" : "Beltres de Jesus",
+        
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27003",
+        "Cedula" : "402-5645893-0",
+        "Flota" : "849-652-8877"
     },
     {
         "id":7,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Andrea Esther",
+        "Apellido" : "De la Cruz Ortiz",
+        
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27004",
+        "Cedula" : "001-4563542-8",
+        "Flota" : "849-652-5689"
     },
     {
         "id":8,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Starlin Miguel",
+        "Apellido" : "Mejia Medrano",
+        
+        "Rango" : "Capitan",
+        "Numero Empleado" : "27005",
+        "Cedula" : "001-2563214-9",
+        "Flota" : "849-652-4455"
     },
     {
         "id":9,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Jose Manuel",
+        "Apellido" : "Romero Cruz",
+        
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27006",
+        "Cedula" : "001-4585215-8",
+        "Flota" : "849-652-9632"
     },
     {
         "id":10,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+        "Nombre":"Katty ",
+        "Apellido" : "Martinez Perez",
+      
+        "Rango" : "Sargento",
+        "Numero Empleado" : "27007",
+        "Cedula" : "402-5231256-0",
+        "Flota" : "849-652-6547"
     },{
-        "id":11,
-        "Nombre":"Veria Caty",
-        "Apellido" : "Ramirez Rodriguez",
-        "Puesto" : "",
-        "Rango" : "Capitan"
+       
     }
 ]

@@ -8,23 +8,23 @@
     },
     {
         "id":2,
-        "Nombre" : "Hospital Padre Billini",
-        "Ubx" : "18.471191",
-        "Uby" : "-69.889152",
+        "Nombre" : "Hospital San Nicolás de Bari",
+        "Ubx" : "18.474947",
+        "Uby" : "-69.885582",
         "Descripcion" : "24 horas"
     },
     {
         "id":3,
-        "Nombre" : "Hospital Padre Billini",
-        "Ubx" : "18.471191",
-        "Uby" : "-69.889152",
+        "Nombre" : "Hospital Nacional Familia Almuada",
+        "Ubx" : "18.476705",
+        "Uby" : "-69.887008",
         "Descripcion" : "24 horas"
     },
     {
         "id":4,
-        "Nombre" : "Hospital Padre Billini",
-        "Ubx" : "18.471191",
-        "Uby" : "-69.889152",
+        "Nombre" : "Módulo de Asistencia POLITUR",
+        "Ubx" : "18.472726",
+        "Uby" : "-69.88759",
         "Descripcion" : "24 horas"
     }
 ]

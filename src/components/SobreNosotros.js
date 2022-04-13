@@ -26,43 +26,6 @@ const SobreNosotros = ()=>{
                             </div>
                         </div>
                 </div>
-                        
-
-           
-
-
-            <div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div className="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Tenemos como objetivos
-                            </button>
-                            </h2>
-                            <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body">
-                                1- Preservar la vida, la integridad física y moral de las personas.<br/>
-
-                                2- Proteger y garantizar el libre ejercicio de los derechos y libertades de las personas en todo el territorio nacional.<br/>
-
-                                3- Mantener la paz interior, el orden público y social y la seguridad pública.<br/>
-
-                                4- Velar por el fiel y efectivo cumplimiento de las leyes y demás disposiciones generales, ejecutando las órdenes que reciba de las autoridades en el ámbito de sus respectivas competencias.<br/>
-
-                                5- Prevenir y controlar la delincuencia y criminalidad.<br/>
-
-                                6- Ejecutar las detenciones y capturas en los casos previstos por la ley.<br/>
-
-                                7- Vigilar y proteger los edificios, instalaciones públicas y parques, así como aquellos centros o establecimientos que por su interés lo requieran.<br/>
-
-                                8- Registrar y controlar los servicios a las entidades o servicios privados de seguridad.
-
-
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
 
         </div>
     )
